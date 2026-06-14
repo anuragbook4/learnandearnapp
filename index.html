@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn & Earn - Play Games & Earn Real Rewards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-theme="light">
+    
+    <div id="main-viewport">
+        <nav id="navbar">
+            <div class="container">
+                <button id="menu-toggle" class="nav-btn mobile-only" title="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="logo">
+                    <img src="assets/logo.png" alt="Learn & Earn Logo" class="nav-logo">
+                    <span class="logo-text"><span class="purple">Learn</span><span class="amber">&Earn</span></span>
+                </div>
+                
+                <ul class="nav-links">
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#features">Games</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+
+                <div class="nav-right">
+                    <button id="view-toggle" class="nav-btn" title="Switch Device View">
+                        <i class="fas fa-desktop"></i>
+                    </button>
+                    <button id="theme-toggle" class="nav-btn" title="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="#" class="btn-primary desktop-only">Download App</a>
+                </div>
+            </div>
+        </nav>
+
+        <header id="hero" class="reveal-hidden">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>The Fun Way <br>To <span class="purple">Learn</span> <span class="amber">& Earn</span></h1>
+                    <p>Join thousands of players winning daily rewards by playing simple games, solving quizzes, and referring friends. Learning has never been this rewarding!</p>
+                    <div class="cta-group">
+                        <a href="#" class="btn-main">Download for Android <i class="fab fa-google-play"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/logo.png" alt="Learn & Earn App Logo" style="width: 100%; max-width: 400px;">
+                </div>
+            </div>
+        </header>
+
+        <section id="features" class="reveal-hidden">
+            <div class="container">
+                <h2 class="section-title">Play & <span class="gradient-text">Win Daily</span></h2>
+                <div class="features-grid">
+                    <div class="app-card card-gk">
+                        <div class="app-card-icon icon-gk"><i class="fas fa-globe-americas"></i></div>
+                        <div class="app-card-info">
+                            <h3>General Knowledge</h3>
+                            <p>Solve mixed easy questions and sharpen your mind.</p>
+                            <div class="reward-tag"><i class="fas fa-coins"></i> +10 / solve</div>
+                        </div>
+                    </div>
+                    <div class="app-card card-math">
+                        <div class="app-card-icon icon-math"><i class="fas fa-calculator"></i></div>
+                        <div class="app-card-info">
+                            <h3>Math Battle</h3>
+                            <p>Solve quick sums and win up to 1000 coins.</p>
+                            <div class="reward-tag"><i class="fas fa-coins"></i> Best Luck!</div>
+                        </div>
+                    </div>
+                    <div class="app-card card-slot">
+                        <div class="app-card-icon icon-slot"><i class="fas fa-puzzle-piece"></i></div>
+                        <div class="app-card-info">
+                            <h3>Mega Match</h3>
+                            <p>Match symbols and unlock big loyalty rewards.</p>
+                            <div class="reward-tag"><i class="fas fa-coins"></i> Big Win!</div>
+                        </div>
+                    </div>
+                    <div class="app-card card-ttt">
+                        <div class="app-card-icon icon-ttt"><i class="fas fa-times"></i></div>
+                        <div class="app-card-info">
+                            <h3>Tic Tac Toe</h3>
+                            <p>Beat the AI in the classic X and O game.</p>
+                            <div class="reward-tag"><i class="fas fa-coins"></i> +20 / win</div>
+                        </div>
+                    </div>
+                    <div class="app-card card-spin">
+                        <div class="app-card-icon icon-play"><i class="fas fa-sync-alt"></i></div>
+                        <div class="app-card-info">
+                            <h3>Lucky Spin</h3>
+                            <p>Spin the lucky wheel and win instant rewards.</p>
+                            <div class="reward-tag"><i class="fas fa-coins"></i> Spin Now!</div>
+                        </div>
+                    </div>
+                    <div class="app-card card-scratch">
+                        <div class="app-card-icon icon-scratch"><i class="fas fa-hand-pointer"></i></div>
+                        <div class="app-card-info">
+                            <h3>Scratch Card</h3>
+                            <p>Scratch to reveal hidden surprises and coins.</p>
+                            <div class="reward-tag"><i class="fas fa-coins"></i> Instant Gain</div>
+                        </div>
+                    </div>
+                    <div class="app-card card-more">
+                        <div class="app-card-icon icon-more"><i class="fas fa-ellipsis-h"></i></div>
+                        <div class="app-card-info">
+                            <h3>And Many More...</h3>
+                            <p>Explore Daily Bonus, Tasks, and Special Events!</p>
+                            <div class="reward-tag">Infinite Fun</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="reveal-hidden" style="padding: 100px 0; background: var(--bg-card);">
+            <div class="container">
+                <h2 class="section-title">About <span class="gradient-text">Learn & Earn</span></h2>
+                <div class="app-card" style="padding: 50px; flex-direction: column; align-items: flex-start; border-style: dashed; border-color: var(--primary);">
+                    <p style="font-size: 18px; color: var(--text-main); margin-bottom: 25px; font-weight: 600;">
+                        Welcome to Learn & Earn, the ultimate platform where knowledge meets rewarding experiences!
+                    </p>
+                    
+                    <h3 style="margin-bottom: 10px; color: var(--primary);">Our Mission</h3>
+                    <p style="margin-bottom: 25px; color: var(--text-muted);">
+                        At Learn & Earn, our mission is to make learning fun, engaging, and rewarding for everyone. We believe that expanding your knowledge should come with a sense of achievement. That’s why we have created a gamified ecosystem that encourages users to challenge their minds, sharpen their skills, and earn exciting loyalty rewards along the way.
+                    </p>
+
+                    <h3 style="margin-bottom: 10px; color: var(--primary);">What We Offer</h3>
+                    <p style="margin-bottom: 10px; color: var(--text-muted);">Our application provides a variety of engaging, free-to-play educational activities and casual mini-games designed to keep you entertained and motivated:</p>
+                    <ul style="margin-left: 20px; margin-bottom: 25px; color: var(--text-muted); list-style: disc;">
+                        <li style="margin-bottom: 10px;"><strong>Educational Quizzes & Math Puzzles:</strong> Test your knowledge across multiple subjects and solve quick math challenges to stimulate your brain.</li>
+                        <li style="margin-bottom: 10px;"><strong>Casual Mini-Games:</strong> Enjoy fun, skill-free activities like our daily wheel spin, virtual scratch cards, and casual symbol-matching games.</li>
+                        <li><strong>Loyalty Reward Program:</strong> Accumulate virtual coins through organic gameplay and safely redeem them for your favorite rewards, including UPI transfers, digital gift cards, and popular gaming vouchers.</li>
+                    </ul>
+
+                    <h3 style="margin-bottom: 10px; color: var(--primary);">Why Choose Us?</h3>
+                    <ul style="margin-left: 20px; margin-bottom: 25px; color: var(--text-muted); list-style: decimal;">
+                        <li style="margin-bottom: 10px;"><strong>100% Free-to-Play:</strong> We never ask for deposits, stakes, or real-money purchases. Our platform is completely free, safe, and built purely for gamification and entertainment.</li>
+                        <li style="margin-bottom: 10px;"><strong>Fair & Secure Platform:</strong> We use advanced security measures to ensure a transparent, bot-free environment where genuine engagement is appreciated and rewarded fairly.</li>
+                        <li><strong>Dedicated Support:</strong> We value our community. Our processing and support teams work hard to ensure smooth reward distribution and answer your queries promptly.</li>
+                    </ul>
+
+                    <p style="text-align: center; width: 100%; font-weight: 700; color: var(--secondary); margin-top: 20px;">
+                        Thank you for choosing Learn & Earn. Keep learning, keep playing, and keep earning!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="reveal-hidden" style="padding: 100px 0; background: var(--bg-page);">
+            <div class="container">
+                <h2 class="section-title">Contact <span class="gradient-text">Us</span></h2>
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div class="app-card" style="flex-direction: column; align-items: flex-start; padding: 40px; border-style: dashed; border-color: var(--primary);">
+                        <p style="font-size: 16px; color: var(--text-muted); margin-bottom: 25px;">
+                            If you have any questions, feedback, legal inquiries, or support requests regarding your account and reward redemptions, please feel free to reach out to us. Our dedicated support team is here to assist you.
+                        </p>
+                        
+                        <h3 style="margin-bottom: 15px; font-size: 20px;">Support Details:</h3>
+                        <div style="width: 100%; background: var(--bg-card); padding: 20px; border-radius: 12px; margin-bottom: 25px;">
+                            <p style="margin-bottom: 10px;"><strong>Email Support:</strong> <a href="mailto:help910310@gmail.com" style="color: var(--primary); text-decoration: none;">help910310@gmail.com</a></p>
+                            <p style="margin-bottom: 10px;"><strong>Business Hours:</strong> Monday to Friday (10:00 AM to 6:00 PM IST)</p>
+                            <p><strong>Expected Response Time:</strong> We strive to reply to all user queries within 24 to 48 hours.</p>
+                        </div>
+
+                        <h3 style="margin-bottom: 10px; color: var(--danger); font-size: 18px;">Important Notice for Users:</h3>
+                        <p style="font-size: 14px; color: var(--text-muted);">
+                            When reaching out to support regarding account suspension, coin discrepancy, or payment delays, please clearly state your <strong>Registered Google Email ID</strong> and provide relevant screenshots if applicable. This helps us verify and resolve your issue as quickly as possible.
+                        </p>
+                        
+                        <a href="mailto:help910310@gmail.com" class="btn-main" style="margin-top: 30px; align-self: center;">Send Email Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p style="text-align: center; margin-top: 40px; opacity: 0.5; font-size: 14px;">&copy; 2026 Learn & Earn. Educational Quiz & Loyalty Rewards Program</p>
+            </div>
+        </footer>
+
+        <!-- Bottom Navigation -->
+        <div class="mobile-bottom-nav">
+            <div class="bottom-nav-item active"><i class="fas fa-home"></i><span>Home</span></div>
+            <div class="bottom-nav-item"><i class="fas fa-tasks"></i><span>Task</span></div>
+            <div class="bottom-nav-item"><i class="fas fa-users"></i><span>Refer</span></div>
+            <div class="bottom-nav-item"><i class="fas fa-wallet"></i><span>Wallet</span></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
