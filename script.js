@@ -1,23 +1,26 @@
 // Theme Toggle Logic
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
-const icon = themeToggle.querySelector('i');
+const icon = themeToggle ? themeToggle.querySelector('i') : null;
 
 // Check for saved theme
 const savedTheme = localStorage.getItem('theme') || 'light';
 body.setAttribute('data-theme', savedTheme);
-updateIcon(savedTheme);
+if (themeToggle && icon) updateIcon(savedTheme);
 
-themeToggle.addEventListener('click', () => {
-    const currentTheme = body.getAttribute('data-theme');
-    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-    
-    body.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    updateIcon(newTheme);
-});
+if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = body.getAttribute('data-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        
+        body.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateIcon(newTheme);
+    });
+}
 
 function updateIcon(theme) {
+    if (!icon) return;
     if (theme === 'dark') {
         icon.classList.replace('fa-moon', 'fa-sun');
     } else {
@@ -27,52 +30,56 @@ function updateIcon(theme) {
 
 // Device View Toggle Logic
 const viewToggle = document.getElementById('view-toggle');
-const viewIcon = viewToggle.querySelector('i');
-let currentView = 'desktop';
+if (viewToggle) {
+    const viewIcon = viewToggle.querySelector('i');
+    let currentView = 'desktop';
 
-viewToggle.addEventListener('click', () => {
-    if (currentView === 'desktop') {
-        currentView = 'tablet';
-        body.className = body.getAttribute('data-theme') === 'dark' ? 'view-tablet' : 'view-tablet';
-        body.classList.add(body.getAttribute('data-theme') === 'dark' ? 'dark' : ''); // Keep theme
-        body.classList.add('view-tablet');
-        viewIcon.className = 'fas fa-tablet-alt';
-    } else if (currentView === 'tablet') {
-        currentView = 'mobile';
-        body.classList.replace('view-tablet', 'view-mobile');
-        viewIcon.className = 'fas fa-mobile-alt';
-    } else {
-        currentView = 'desktop';
-        body.classList.remove('view-mobile');
-        viewIcon.className = 'fas fa-desktop';
-    }
-    
-    // Maintain theme attribute while switching classes
-    const theme = localStorage.getItem('theme') || 'light';
-    body.setAttribute('data-theme', theme);
-});
+    viewToggle.addEventListener('click', () => {
+        if (currentView === 'desktop') {
+            currentView = 'tablet';
+            body.className = body.getAttribute('data-theme') === 'dark' ? 'view-tablet' : 'view-tablet';
+            body.classList.add(body.getAttribute('data-theme') === 'dark' ? 'dark' : ''); // Keep theme
+            body.classList.add('view-tablet');
+            viewIcon.className = 'fas fa-tablet-alt';
+        } else if (currentView === 'tablet') {
+            currentView = 'mobile';
+            body.classList.replace('view-tablet', 'view-mobile');
+            viewIcon.className = 'fas fa-mobile-alt';
+        } else {
+            currentView = 'desktop';
+            body.classList.remove('view-mobile');
+            viewIcon.className = 'fas fa-desktop';
+        }
+        
+        // Maintain theme attribute while switching classes
+        const theme = localStorage.getItem('theme') || 'light';
+        body.setAttribute('data-theme', theme);
+    });
+}
 
 // Mobile Menu Toggle Logic
 const menuToggle = document.getElementById('menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
-menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    const menuIcon = menuToggle.querySelector('i');
-    if (navLinks.classList.contains('active')) {
-        menuIcon.classList.replace('fa-bars', 'fa-times');
-    } else {
-        menuIcon.classList.replace('fa-times', 'fa-bars');
-    }
-});
-
-// Close menu when a link is clicked
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        menuToggle.querySelector('i').classList.replace('fa-times', 'fa-bars');
+if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        const menuIcon = menuToggle.querySelector('i');
+        if (navLinks.classList.contains('active')) {
+            menuIcon.classList.replace('fa-bars', 'fa-times');
+        } else {
+            menuIcon.classList.replace('fa-times', 'fa-bars');
+        }
     });
-});
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            menuToggle.querySelector('i').classList.replace('fa-times', 'fa-bars');
+        });
+    });
+}
 
 // Smooth Navbar Background Change on Scroll
 function handleNavbarScroll(scrollTop) {
@@ -164,3 +171,14 @@ function scrollActive() {
 
 window.addEventListener('scroll', scrollActive);
 window.addEventListener('load', scrollActive);
+
+// Scroll Progress Bar Logic
+window.addEventListener('scroll', () => {
+    const scrollProgress = document.getElementById('scroll-progress');
+    if (scrollProgress) {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        scrollProgress.style.width = scrolled + "%";
+    }
+});

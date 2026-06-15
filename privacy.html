@@ -1,48 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Learn & Earn</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
-        body { line-height: 1.8; }
-        .policy-container { padding: 150px 20px 80px; max-width: 900px; margin: 0 auto; }
-        .policy-card { background: var(--bg-card); border: 1px solid var(--card-border); border-radius: 24px; padding: 50px; box-shadow: var(--shadow); }
-        h1 { font-size: 42px; margin-bottom: 20px; color: var(--text-main); }
-        h2 { color: var(--primary); margin-top: 45px; margin-bottom: 20px; font-size: 26px; border-bottom: 2px solid var(--card-border); padding-bottom: 10px; }
-        h3 { margin-top: 25px; margin-bottom: 12px; font-size: 20px; color: var(--text-main); font-weight: 700; }
-        p, li { color: var(--text-muted); font-size: 16px; margin-bottom: 15px; }
-        ul { margin-left: 25px; margin-bottom: 20px; list-style-type: disc; }
-        strong { color: var(--text-main); }
-        .contact-box { background: var(--bg-page); padding: 25px; border-radius: 15px; border: 1px solid var(--card-border); margin-top: 30px; }
-        .last-updated { color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; margin-bottom: 15px; display: block; }
+        body {
+            line-height: 1.8;
+        }
+
+        .policy-container {
+            padding: 150px 20px 80px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .policy-card {
+            background: var(--bg-card);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 50px;
+            box-shadow: var(--shadow);
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-top: 45px;
+            margin-bottom: 20px;
+            font-size: 26px;
+            border-bottom: 2px solid var(--card-border);
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-size: 20px;
+            color: var(--text-main);
+            font-weight: 700;
+        }
+
+        p,
+        li {
+            color: var(--text-muted);
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-bottom: 20px;
+            list-style-type: disc;
+        }
+
+        strong {
+            color: var(--text-main);
+        }
+
+        .contact-box {
+            background: var(--bg-page);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid var(--card-border);
+            margin-top: 30px;
+        }
+
+        .last-updated {
+            color: var(--primary);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 14px;
+            margin-bottom: 15px;
+            display: block;
+        }
     </style>
 </head>
+
 <body data-theme="light">
+    <!-- Premium Design Elements -->
+    <div id="scroll-progress"></div>
+    <div class="blob-container">
+        <div class="blob"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
     <nav id="navbar">
         <div class="container">
+            <button id="menu-toggle" class="nav-btn mobile-only" title="Open Menu">
+                <i class="fas fa-bars"></i>
+            </button>
             <div class="logo">
                 <img src="assets/logo.png" alt="Learn & Earn Logo" class="nav-logo">
                 <span class="logo-text"><span class="purple">Learn</span><span class="amber">&Earn</span></span>
             </div>
-            <div class="menu-toggle" id="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="nav-container">
-                <ul class="nav-links">
-                    <li><a href="index.html#hero">Home</a></li>
-                    <li><a href="index.html#features">Games</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="privacy.html" class="active">Privacy Policy</a></li>
-                    <li><a href="terms.html">Terms & Conditions</a></li>
-                    <li><a href="index.html#contact">Contact Us</a></li>
-                </ul>
+            
+            <ul class="nav-links">
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#features">Games</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="privacy.html" class="active">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <button id="theme-toggle" class="nav-btn" title="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
             </div>
         </div>
     </nav>
@@ -51,13 +129,16 @@
         <div class="policy-card">
             <h1>Privacy Policy for <span class="purple">Learn</span> <span class="amber">& Earn</span></h1>
             <span class="last-updated">Last Updated: June 2026</span>
-            
-            <p>Welcome to <strong>Learn & Earn</strong>. Your privacy is important to us. This Privacy Policy explains how we collect, use, store, and protect your information when you use our educational quiz and gamified rewards application.</p>
-            <p>By using Learn & Earn, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
+
+            <p>Welcome to <strong>Learn & Earn</strong>. Your privacy is important to us. This Privacy Policy explains
+                how we collect, use, store, and protect your information when you use our educational quiz and gamified
+                rewards application.</p>
+            <p>By using Learn & Earn, you agree to the collection and use of information in accordance with this Privacy
+                Policy.</p>
 
             <h2>1. Information We Collect</h2>
             <p>To provide and improve our services, we may collect the following information:</p>
-            
+
             <h3>Google Account Information</h3>
             <p>When you sign in using Google, we may collect:</p>
             <ul>
@@ -68,7 +149,8 @@
             </ul>
 
             <h3>Device Information</h3>
-            <p>We may collect limited device-related information to prevent fraud and ensure platform stability, including:</p>
+            <p>We may collect limited device-related information to prevent fraud and ensure platform stability,
+                including:</p>
             <ul>
                 <li>Device Model</li>
                 <li>Operating System Version</li>
@@ -101,16 +183,28 @@
             </ul>
 
             <h2>3. Reward System & Redemptions</h2>
-            <p>Learn & Earn provides virtual coins and loyalty rewards through eligible in-app entertainment and educational activities, including educational quizzes, math puzzle solving, casual wheel-spin mini-games, virtual scratch cards, and casual symbol-matching mini-games available within the application. Users can redeem these accumulated coins for various rewards such as UPI transfers, digital gift cards, or game gift codes.</p>
-            
+            <p>Learn & Earn provides virtual coins and loyalty rewards through eligible in-app entertainment and
+                educational activities, including educational quizzes, math puzzle solving, casual wheel-spin
+                mini-games, virtual scratch cards, and casual symbol-matching mini-games available within the
+                application. Users can redeem these accumulated coins for various rewards such as UPI transfers, digital
+                gift cards, or game gift codes.</p>
+
             <h3>Redemption Processing</h3>
             <p>Approved redemption requests are generally processed within <strong>7 to 14 business days</strong>.</p>
-            <p>In certain circumstances, including but not limited to high transaction volume, technical issues, manual verification reviews, security checks, or third-party payment provider delays, redemptions may take up to <strong>21 days (3 weeks)</strong> to complete.</p>
+            <p>In certain circumstances, including but not limited to high transaction volume, technical issues, manual
+                verification reviews, security checks, or third-party payment provider delays, redemptions may take up
+                to <strong>21 days (3 weeks)</strong> to complete.</p>
             <p>Users acknowledge that reward processing times may vary and are not guaranteed.</p>
-            <p><strong>Important Notice:</strong> All mini-games (including quiz challenges, spins, scratch cards, and symbol-matching games) are entirely free to play and are intended solely for entertainment and gamification purposes. Learn & Earn does not require, accept, or allow any real-money purchases, deposits, or stakes to play these games. Our platform does not offer, promote, or tolerate gambling, betting, or real-money wagering.</p>
+            <p><strong>Important Notice:</strong> All mini-games (including quiz challenges, spins, scratch cards, and
+                symbol-matching games) are entirely free to play and are intended solely for entertainment and
+                gamification purposes. Learn & Earn does not require, accept, or allow any real-money purchases,
+                deposits, or stakes to play these games. Our platform does not offer, promote, or tolerate gambling,
+                betting, or real-money wagering.</p>
 
             <h2>4. Fraud Prevention & Account Security</h2>
-            <p>To protect the platform, our partners, and our users, Learn & Earn reserves the right to investigate suspicious activity. The following activities are strictly prohibited and may result in immediate reward cancellation, redemption rejection, temporary suspension, or permanent account termination:</p>
+            <p>To protect the platform, our partners, and our users, Learn & Earn reserves the right to investigate
+                suspicious activity. The following activities are strictly prohibited and may result in immediate reward
+                cancellation, redemption rejection, temporary suspension, or permanent account termination:</p>
             <ul>
                 <li>Creating or using multiple accounts on a single device.</li>
                 <li>Using VPNs, proxies, fake emulators, or rooting tools to manipulate location or data.</li>
@@ -119,19 +213,25 @@
                 <li>Generating fake or fraudulent referrals.</li>
                 <li>Any activity intended to manipulate the application's rewards system.</li>
             </ul>
-            <p>All decisions regarding account reviews, suspensions, and reward eligibility remain at the sole discretion of Learn & Earn.</p>
+            <p>All decisions regarding account reviews, suspensions, and reward eligibility remain at the sole
+                discretion of Learn & Earn.</p>
 
             <h2>5. Advertisements</h2>
-            <p>Learn & Earn uses <strong>Google AdMob</strong> to display advertisements. AdMob uses user choice models (such as Rewarded Ads) where users can voluntarily choose to watch ads to earn virtual coins. AdMob and its partners may collect information such as:</p>
+            <p>Learn & Earn uses <strong>Google AdMob</strong> to display advertisements. AdMob uses user choice models
+                (such as Rewarded Ads) where users can voluntarily choose to watch ads to earn virtual coins. AdMob and
+                its partners may collect information such as:</p>
             <ul>
                 <li>Advertising ID (GAID)</li>
                 <li>Device Information</li>
                 <li>Ad Interaction Data</li>
             </ul>
-            <p>This data is used to provide personalized or non-personalized advertisements. For more information, please review Google’s Privacy Policy. We strictly follow Google's policies and never force or incentivize users to artificially click on advertisements.</p>
+            <p>This data is used to provide personalized or non-personalized advertisements. For more information,
+                please review Google’s Privacy Policy. We strictly follow Google's policies and never force or
+                incentivize users to artificially click on advertisements.</p>
 
             <h2>6. Third-Party Services</h2>
-            <p>Our application utilizes trusted third-party services for seamless functionality, including but not limited to:</p>
+            <p>Our application utilizes trusted third-party services for seamless functionality, including but not
+                limited to:</p>
             <ul>
                 <li>Google Sign-In</li>
                 <li>Firebase Authentication</li>
@@ -140,18 +240,31 @@
                 <li>Google Play Services</li>
                 <li>Firebase Analytics</li>
             </ul>
-            <p>These third-party services may collect and process information in accordance with their own respective privacy policies.</p>
+            <p>These third-party services may collect and process information in accordance with their own respective
+                privacy policies.</p>
 
             <h2>7. Data Storage & Security</h2>
-            <p>We take reasonable technical and organizational measures to protect your personal information from unauthorized access, misuse, loss, alteration, or disclosure. However, no method of electronic transmission over the internet or method of electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+            <p>We take reasonable technical and organizational measures to protect your personal information from
+                unauthorized access, misuse, loss, alteration, or disclosure. However, no method of electronic
+                transmission over the internet or method of electronic storage is 100% secure, and we cannot guarantee
+                absolute security.</p>
 
             <h2>8. Children's Privacy</h2>
-            <p>Learn & Earn is intended for users aged 18 years and above due to the financial nature of reward redemptions. We do not knowingly collect personal information from children under the age of 13. If we discover that personal information from a child under 13 has been collected inadvertently, it will be removed from our servers as soon as reasonably possible.</p>
+            <p>Learn & Earn is intended for users aged 18 years and above due to the financial nature of reward
+                redemptions.</p>
+            <p>We do not knowingly collect personal information from children under the age of 13. If we discover that
+                personal information from a child under 13 has been collected inadvertently, it will be removed from our
+                servers as soon as reasonably possible.</p>
 
             <h2>9. Account & Data Deletion</h2>
-            <p>We believe in user control over personal data. Users have the right to delete their accounts and associated data at any time.</p>
-            <p>You can request permanent account and data deletion directly through the in-app settings screen or by contacting our support team at <a href="mailto:help910310@gmail.com" style="color: var(--primary); text-decoration: none;">help910310@gmail.com</a>.</p>
-            <p>Upon receiving a valid deletion request, all personal data (including Name, Email, and History) will be permanently deleted from our databases within <strong>30 days</strong>, except where certain data must be retained for legal compliance, fraud prevention, or historical record-keeping purposes.</p>
+            <p>We believe in user control over personal data. Users have the right to delete their accounts and
+                associated data at any time.</p>
+            <p>You can request permanent account and data deletion directly through the in-app settings screen or by
+                contacting our support team at <a href="mailto:help910310@gmail.com"
+                    style="color: var(--primary); text-decoration: none;">help910310@gmail.com</a>.</p>
+            <p>Upon receiving a valid deletion request, all personal data (including Name, Email, and History) will be
+                permanently deleted from our databases within <strong>30 days</strong>, except where certain data must
+                be retained for legal compliance, fraud prevention, or historical record-keeping purposes.</p>
 
             <h2>10. Limitation of Liability</h2>
             <p>Learn & Earn shall not be held responsible for:</p>
@@ -164,12 +277,16 @@
             <p>Users agree to use the application at their own discretion and risk.</p>
 
             <h2>11. Changes to This Privacy Policy</h2>
-            <p>We may update this Privacy Policy from time to time to reflect changes in our app features or legal requirements. Any changes will be posted on this page with an updated "Last Updated" date. Continued use of the application after updates constitutes acceptance of the revised policy.</p>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our app features or legal
+                requirements. Any changes will be posted on this page with an updated "Last Updated" date. Continued use
+                of the application after updates constitutes acceptance of the revised policy.</p>
 
             <h2>12. Contact Us</h2>
-            <p>If you have any questions, concerns, support requests, or privacy-related inquiries, please contact us at:</p>
+            <p>If you have any questions, concerns, support requests, or privacy-related inquiries, please contact us
+                at:</p>
             <div class="contact-box">
-                <p style="margin-bottom: 0; font-weight: 700;">Email: <a href="mailto:help910310@gmail.com" style="color: var(--primary); text-decoration: none;">help910310@gmail.com</a></p>
+                <p style="margin-bottom: 0; font-weight: 700;">Email: <a href="mailto:help910310@gmail.com"
+                        style="color: var(--primary); text-decoration: none;">help910310@gmail.com</a></p>
             </div>
             <p style="margin-top: 25px;">Thank you for using Learn & Earn.</p>
         </div>
@@ -179,4 +296,5 @@
         <p>&copy; 2026 Learn & Earn. Educational Quiz & Loyalty Rewards Program</p>
     </footer>
 </body>
+
 </html>

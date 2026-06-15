@@ -24,26 +24,37 @@
     </style>
 </head>
 <body data-theme="light">
+    <!-- Premium Design Elements -->
+    <div id="scroll-progress"></div>
+    <div class="blob-container">
+        <div class="blob"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
     <nav id="navbar">
         <div class="container">
+            <button id="menu-toggle" class="nav-btn mobile-only" title="Open Menu">
+                <i class="fas fa-bars"></i>
+            </button>
             <div class="logo">
                 <img src="assets/logo.png" alt="Learn & Earn Logo" class="nav-logo">
                 <span class="logo-text"><span class="purple">Learn</span><span class="amber">&Earn</span></span>
             </div>
-            <div class="menu-toggle" id="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="nav-container">
-                <ul class="nav-links">
-                    <li><a href="index.html#hero">Home</a></li>
-                    <li><a href="index.html#features">Games</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="terms.html" class="active">Terms & Conditions</a></li>
-                    <li><a href="index.html#contact">Contact Us</a></li>
-                </ul>
+            
+            <ul class="nav-links">
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#features">Games</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html" class="active">Terms & Conditions</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <button id="theme-toggle" class="nav-btn" title="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
             </div>
         </div>
     </nav>
